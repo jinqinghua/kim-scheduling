@@ -14,12 +14,13 @@ public class SchedulingConfiguration {
 
     /**
      * 如果不定义， Spring 会启动一个 poolSize = 1 ScheduledExecutorTask 去执行
+     * 也可以通过配置文件来配置： spring.
      */
-    @Bean
+    //@Bean
     public ScheduledExecutorFactoryBean scheduledExecutorFactoryBean() {
         ScheduledExecutorFactoryBean factoryBean = new ScheduledExecutorFactoryBean();
         factoryBean.setPoolSize(20);
-        factoryBean.setThreadNamePrefix("scheduledExecutor-");
+        factoryBean.setThreadNamePrefix("code-config-scheduling-");
         factoryBean.setWaitForTasksToCompleteOnShutdown(true); // 等待 Task 执行完成再关闭
         factoryBean.setAwaitTerminationSeconds(60); // 只等60秒
         return factoryBean;
@@ -29,7 +30,7 @@ public class SchedulingConfiguration {
     public Executor taskExecutor() {
         ThreadPoolTaskScheduler executor = new ThreadPoolTaskScheduler();
         executor.setPoolSize(20);
-        executor.setThreadNamePrefix("taskExecutor-");
+        executor.setThreadNamePrefix("code-config-executor-");
         executor.setWaitForTasksToCompleteOnShutdown(true);
         executor.setAwaitTerminationSeconds(60);
         return executor;
