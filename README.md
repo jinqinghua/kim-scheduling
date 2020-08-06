@@ -1,13 +1,21 @@
-# scheduling
+# Spring Task
 
-## 多种方式实现 Scheduling
+## Spring Task Execution
+
+### 代码方式实现的线程池
+
+### 配置方式实现的线程池
+
+## Spring Task Scheduling
+
+### 多种方式实现 Scheduling
 - Linux crontab
 - JDK TimerTask
 - ScheduledExecutorService
 - Spring Scheduler
 - Quartz
 
-## 考虑
+### 多角度考量
 - 易用性
 - 可配置性，如支持 cron 方式的灵活配置
 - 多线程支持

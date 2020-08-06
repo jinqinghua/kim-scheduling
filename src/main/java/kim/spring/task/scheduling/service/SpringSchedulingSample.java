@@ -1,4 +1,4 @@
-package kim.task.scheduling.service;
+package kim.spring.task.scheduling.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

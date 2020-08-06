@@ -12,7 +12,7 @@
     </parent>
 
     <groupId>kim</groupId>
-    <artifactId>kim-task</artifactId>
+    <artifactId>kim-spring-task</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
