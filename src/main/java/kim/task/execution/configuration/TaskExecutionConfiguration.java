@@ -1,4 +1,4 @@
-package kim.scheduling.configuration;
+package kim.task.execution.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import java.util.concurrent.Executor;
 
 @Configuration
 @EnableScheduling
-public class SchedulingConfiguration {
+public class TaskExecutionConfiguration {
 
     /**
      * 如果不定义， Spring 会启动一个 poolSize = 1 ScheduledExecutorTask 去执行
