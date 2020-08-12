@@ -1,5 +1,6 @@
 package kim.spring.task.scheduling.configuration;
 
+import org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ScheduledExecutorFactoryBean;
@@ -10,7 +11,7 @@ public class SchedulingConfiguration {
 
     /**
      * 如果不定义， Spring 会启动一个 poolSize = 1 ScheduledExecutorTask 去执行
-     * 也可以通过配置文件来配置： spring.
+     * @see TaskSchedulingAutoConfiguration
      */
     //@Beans
     public ScheduledExecutorFactoryBean scheduledExecutorFactoryBean() {

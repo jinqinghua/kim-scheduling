@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @see java.time.Duration#parse(CharSequence)
  */
-@Service
+//@Service
 @Slf4j
 public class SpringSchedulingSample {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
@@ -51,7 +51,7 @@ public class SpringSchedulingSample {
 
     /**
      * 定时执行， 格式：
-     * second minute hour “day of month month” "day of week"
+     * second minute hour "day of month month" "day of week"
      *
      * @see Scheduled#cron()
      */
